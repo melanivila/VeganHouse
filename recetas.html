@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+        <title>Vegan House - Recetas veganas</title>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <style type="text/css"> BODY{ font-family: 'Raleway', sans-serif; } </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header-grid">
+            <div class="header-grid-item"><h1>Vegan House - Tu lugar de recetas veganas</h1></div>
+                <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+            <div class="header-grid-item">
+                <ul class="nav">
+                    <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>                    
+                    <li><a href="recetas.html"><i class="fas fa-utensils"></i>Recetas veganas</a>
+                        <ul>
+                            <li><a href="#desayunosymeriendas">Desayunos y meriendas</a></li>
+                            <li><a href="#almuerzosycenas">Almuerzos y cenas</a></li>
+                            <li><a href="#snacksypicoteo">Snacks y picoteo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="descargas.html"><i class="fas fa-arrow-circle-down"></i>Descargas</a></li>
+                    <li><a href="videos.html"><i class="far fa-play-circle"></i>Videos</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a></li>
+                </ul>
+            </div>            
+            <div class="header-grid-item">
+                <img src="img/header-frutasyvegetales-opacidad.jpg" class="img-header">
+            </div>
+        </header>
+        <!-- componente de bootstrap - accordion -->
+        <section id="recetas">
+            <h2><i class="fas fa-utensils"></i>Recetas veganas</h2>            
+                <h3 id="desayunosymeriendas">Desayunos y meriendas</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Panqueques de avena y banana</button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src="img/receta-panqueques.jpg" alt="Panqueques de avena y banana">
+                            <p class="destacados">Un desayuno ideal, rico y fácil de hacer. ¡Super esponjosos!</p>
+                            <p class="ingredientes">Ingredientes</p>
+                            <ul>
+                                <li>1 taza de harina de avena o avena molida (también puede ser harina de trigo integral)</li>
+                                <li>2 cucharadas de azúcar mascabo o la que prefieras</li>
+                                <li>2 cucharaditas de polvo de hornear</li>
+                                <li>Una pisca de sal</li>
+                                <li>1/2 taza de leche vegetal</li>
+                                <li>1 banana madura pisada</li> 
+                                <li>1 cucharada de aceite</li>
+                                <li>1 cucharadita de esencia de vainilla</li>
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Mezclar los ingredientes secos en un bowl</li>
+                                <li>Mezclar por otro lado los ingredientes líquidos y agregarlos al bowl de secos
+                                    Remover hasta que quede una masa homogénea y dejar reposar 10 minutos</li>
+                                <li>Echar una gota de aceite en una sartén y, una vez caliente, verter la masa para armar los panqueques.
+                                    Deben cocinarse aproximadamente dos minutos por lado</li>
+                                <li>Una vez listos, servir con mantequilla de maní, mermelada o el topping que más te guste</li>
+                                <li>Pueden guardarse en la heladera por varios días, o en el congelador hasta 2 meses</li>                            
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Pan de Bagel</button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/bagels-veganos.jpg" alt="Bagels veganos">
+                            <p class="destacados">Increíbles bagels caseros ¡crujientes por fuera y tiernos por dentro!</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>250gr de harina común</li>
+                                <li>1cda de levadura seca</li>
+                                <li>Sal a gusto</li>
+                                <li>1cda de azúcar</li>
+                                <li>1/2 taza de agua tibia</li>
+                                <li>Semillas c/n</li>                                
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Tamizar la harina en un bowl y hacer un hueco en el centro, agregar la sal alrededor.</li>
+                                <li>Agregar dentro la levadura seca y la cucharada de azúcar.</li>
+                                <li>Ir agregando de a poco el agua y mezclando desde el centro para que la levadura no toque la sal.</li>
+                                <li>Una vez formada la masa, pasar a la mesada y amasar con la mano (unos diez minutos).</li>
+                                <li>Dejar leudar hasta que duplique su tamaño.</li>
+                                <li>Cortar en bollitos, y luego estirar cada uno por separado. Armar cilindros y unirlos en una punta para que quede la forma de rosquita. </li>                            
+                                <li>Hervir agua en una olla con una pizca de azúcar. Sumergir los bagels 10 segundos por cada lado.</li>
+                                <li>Una vez listos, agregar semillas por encima y pasar al horno (10 minutos aproximadamente). ¡Y listos!</li>
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Porridge de Trigo Sarraceno</button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/porridge-de-trigo-sarraceno.jpg" alt="Porridge de trigo sarraceno">
+                            <p class="destacados">Sin gluten, fáciles de hacer y muy saciantes.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>1/2 taza de trigo sarraceno en grano</li>
+                                <li>2 tazas de leche vegetal</li>
+                                <li>2 bananas</li>
+                                <li>Los toppings que más te gusten: frutas de estación, chips de chocolate, jarabe de maple, frutos secos, coco en escamas o mantequilla de maní.</li>
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Deja el trigo sarraceno en remojo durante al menos 4 horas.</li>
+                                <li>Colarlo y procesarlo junto con la leche hasta que esten bien integrados.</li>
+                                <li>Llevar esta mezcla al fuego, y cuando rompa a hervor cocinar durante unos 5 minutos.</li>
+                                <li>¡El porridge está listo! Agregar toppins a gusto y a disfrutar.</li>                                
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                    
+                <h3 id="almuerzosycenas">Almuerzos y cenas</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Hamburguesas de lentejas
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src="img/receta-hambur-lentejas.jpg" alt="Hamburguesas de lentejas">
+                            <p class="destacados">Espectaculares burgers de lentejas: muy ricas, sanas y frizables.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>400 gr de lentejas cocidas</li>
+                                <li>2 dientes de ajo</li>
+                                <li>1 pimiento rojo</li>
+                                <li>1 cebolla</li>
+                                <li>1 zanahoria rallada</li>
+                                <li>1 cucharadita de comino</li>
+                                <li>1 cucharadita de cúrcuma</li>
+                                <li>Sal y pimienta</li>
+                                <li>Aceite de oliva virgen extra</li>
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Picar la cebolla, el pimiento y el ajo muy pequeños, y saltearlos con un poco de aceite en una sartén.</li>
+                                <li>Triturar las lentejas (o pisarlas con pisapapas) y añadir los vegetales salteados y la zanahoria rallada.</li>
+                                <li>Mezclar bien todos los ingredientes, armar bollitos y dar forma a las hamburguesas.</li>
+                                <li>Si la masa queda muy blanda, puede agregarse un poco de pan rallado.</li>
+                                <li>Lo ideal es que dejar enfriar en heladera durante unas horas para que la masa se endurezca.</li>
+                                <li>Estas hamburguesas pueden mantenerse en frizzer o congelador hasta 3 meses, y tenerlas siempre listas para sacarnos del apuro.</li>                            
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">One Pot Pasta
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/One-Pot-Pasta.jpg" alt="One pot pasta">
+                            <p class="destacados">Receta de pasta muy sabrosa, sencilla y práctica en la que sólo se usa una olla.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>225 g de espaguetis</li>
+                                <li>1 cebolla en juliana</li>
+                                <li>4 dientes de ajo troceados</li>
+                                <li>225 g de tomates cherry en mitades</li>
+                                <li>Hojas de albahaca fresca</li>
+                                <li>2 cdas de aceite de oliva virgen extra</li>
+                                <li>1 cucharadita de sal</li>
+                                <li>1 pizca de pimienta negra molida y pimienta de cayena</li>
+                                <li>3 tazas de agua o caldo de verduras</li>
+                                
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Necesitarás una sartén u olla donde entren los espaguetis enteros.</li>
+                                <li>Colocar todos los ingredientes en la sartén u olla y cocinar a fuego alto hasta que rompa hervor.</li>
+                                <li>Bajar el fuego y cocinar durante unos 15 minutos hasta que la pasta esté al dente.</li>                                
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Fajitas veganas
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/Fajitas-Veganas.jpg" alt="Fajitas veganas">
+                            <p class="destacados">Súper fáciles de preparar y muy proteicas. Hechas con seitán y vegetales.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>250 g de seitán cortado en tiritas</li>
+                                <li>1/4 cdita de pimienta negra</li>
+                                <li>1/4 cdita de pimienta de cayena</li>
+                                <li>1 cucharadita de comino</li>
+                                <li>1 cucharadita de orégano</li>
+                                <li>1 diente de ajo picado</li>
+                                <li>2 cucharadas de jugo de limón</li>
+                                <li>2 cucharadas de aceite de oliva virgen extra</li>
+                                <li>Vegetales: 1/2 cebolla, 1/2 pimiento rojo, 1/2 pimiento amarillo, 1/2 pimiento verde</li>
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Poner el seitán a marinar en un bol junto con el resto de los ingredientes (excepto vegetales) al menos 15-30 minutos.</li>
+                                <li>Colar el seitán y reservar el marinado. Cocinar en una sartén hasta que se dore por ambos lados.</li>
+                                <li>Cocinar las verduras en una sartén junto con la sal y el líquido del marinado.</li>
+                                <li>Echar el seitán, remover y Cocinar unos minutos más.</li>
+                                <li>¡El relleno está listo! Podés usarlo para hacer unas fajitas, o incluso un sandwich. Acompañado por otras verduras frescas y un poco de guacamole.</li>
+                                
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                    
+                <h3 id="snacksypicoteo">Snacks y picoteo</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Hummus de garbanzos
+                        </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <img src="img/receta-hummus.jpg" alt="Hummus de garbanzos">
+                            <p class="destacados">Una crema de garbanzos sana, riquísima y muy fácil de hacer</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>400 g de garbanzos cocidos</li>
+                                <li>1 cucharada de jugo de limón</li>
+                                <li>1 cucharada de tahini o pasta de sésamo (puedes hacerlo casero moliendo sésamo con una
+                                     cucharada de aceite hasta que forme una pasta)</li>
+                                <li>1 diente de ajo</li>
+                                <li>1/2 cucharadita de comino molido</li>
+                                <li>1/2 cucharadita de sal</li>
+                                <li>1/2 taza agua</li>                            
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>Echar los garbanzos juntos con el jugo de limón, el tahini, el ajo, la sal, el comino y 
+                                    un poco de agua en una batidora, procesadora o mixer de mano </li>
+                                <li>Batir hasta obtener una crema homogénea (si lo preferís menos denso, agregar un poco más de agua y batir)</li>
+                                <li>Servir y añadir pimentón dulce y un chorrito de aceite de oliva virgen extra por encima</li>
+                                <li>Guardar en recipienteo hermético en la heladera hasta 5/6 días</li>                            
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Baba Ganoush
+                        </button>
+                      </h2>
+                      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/Babaganoush.jpg" alt="Pasta de baba ganoush">
+                            <p class="destacados">Delicioso dip de la cocina árabe hecho a base de berenjenas.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>1 kilo de berenjenas</li>
+                                <li>1/4 taza de tahini</li>
+                                <li>1/4 taza de jugo de limón</li>
+                                <li>1/4 taza de perejil picado</li>
+                                <li>2 cucharadas de aceite de oliva</li>
+                                <li>1 cucharadita de comino molido</li>
+                                <li>1 cucharadita de sal</li>
+                                <li>2 dientes de ajo</li>                                
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>El primer paso es cocinar las berenjenas enteras al horno fuerte durante unos 45 minutos (puedes pincharlas con un tenedor para mejor cocción).</li>
+                                <li>Una vez tiernas, sacar del horno y dejar enfriar.</li>
+                                <li>Quitar la piel y mezclar con el resto de los alimentos.</li>
+                                <li>Procesar o batir hasta que estén bien integrados. Es ideal para comer con pan de pita.</li>                                
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Dip de Guacamole</button>
+                      </h2>
+                      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <img src="img/Dip-de-guacamole.jpg" alt="Dip de guacamole">
+                            <p class="destacados">Con solo 6 ingredientes tendrás un espectacular dip para remojar tus nachos.</p>
+                            <p class="ingredientes">Ingredientes:</p>
+                            <ul>
+                                <li>2 paltas medianas</li>
+                                <li>El jugo de 2 limas o limones</li>
+                                <li>1 puñado de cilantro fresco</li>
+                                <li>1/4 cebolla</li>
+                                <li>1 poco de jalapeños picados (a gusto)</li>
+                                <li>1/4 cucharadita de sal</li>                                
+                            </ul>
+                            <p class="pasoapaso">Paso a paso:</p>
+                            <ol>
+                                <li>¡Muy simple! Batir todos los ingredientes hasta obtener una consistencia suave y cremosa.</li>
+                                <li>Se puede servir inmediatamente o guardar en la heladera hasta 2 días.</li>                                
+                            </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                    
+        </section>
+
+        <footer class="grid-footer">
+          <div class="grid-footer-item">Seguinos en redes:</div>
+          <div class="grid-footer-item"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a></div>
+          <div class="grid-footer-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a></div>
+          <div class="grid-footer-item"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i>Twitter</a></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+    </body>
+</html>

@@ -1,0 +1,349 @@
+*{    
+    margin: .8vw;    
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+
+h1{    
+    text-align: center;
+    width: 90%;    
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.img-header{
+    width: 95%;    
+}
+
+a:link{
+    color:#026b85
+}
+
+a:visited{
+    color:#630289
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.grid-footer{
+    width: 90%;
+    margin: auto;
+    font-weight: bold;        
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    border-top: 0.4rem dotted #1d5257;
+}
+
+.grid-footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a:hover{
+    font-weight:lighter;
+}
+
+/* MENU DE NAVEGACION */
+
+.header-grid{
+    display: grid;
+    grid-template-rows: 3rem 6rem;
+    border-bottom: 0.4rem dotted #1d5257;
+    border-top: 0.4rem dotted #1d5257;
+}
+
+.header-grid-item{
+    display: flex;
+    justify-content: center;        
+}
+
+.nav li ul{
+    margin:-0.9rem;    
+    background-color: #ffffff;
+}
+
+.nav li {
+    list-style:none;    
+    padding: 0.1rem;
+    font-size: 1.05rem;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    text-decoration:none;
+    padding:2px;
+    display:block;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;        
+    list-style-type: circle;    
+}
+
+/* PAGINA DE INICIO */
+
+.grid-home{
+    display: grid;
+    grid-template-columns: 60vw 30vw;        
+}
+
+.grid-item-home{
+    display: flex;    
+    align-items:flex-start;
+    flex-flow:column wrap;     
+}
+
+#definicion{   
+    font-style: italic;
+    margin-left: 3rem;
+}
+
+#tips-veganos{
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: #1d5257;
+    border-radius: 8%;
+}
+
+.grid-item-form{    
+    grid-column-start: 1;
+    grid-column-end: 3;    
+    border-top: 0.4rem dotted #1d5257;
+}
+
+/* PAGINA DE RECETAS (componente bootstrap - accordion) */
+
+.destacados{
+    text-align: center;
+    font-style: italic;
+}
+
+.ingredientes{
+    padding: 0.2rem;
+    letter-spacing: 0.2rem;
+    color:#008040;
+    background-color: #ccf2f4;
+    font-weight: bold;
+}
+
+.pasoapaso{
+    padding: 0.2rem;
+    letter-spacing: 0.2rem;
+    color:#003380;
+    background-color: #c1b3ca;
+    font-weight: bold;
+}
+
+/* PAGINA DE DESCARGAS (contiene animaciones) */
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(2,auto);      
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    border: #003380 dotted 0.1rem;    
+}
+
+/* ANIMACIONES */
+
+.h3-descargas::before, .h3-descargas::after{
+    content:"↓";
+    font-size: 3rem;
+    animation: fadeOut 1s linear infinite alternate;
+}
+
+.boton-descarga{
+    border: black 2px solid;
+    border-radius: 1rem;    
+    text-transform: uppercase;
+    animation: descargaAnimacion 3s linear infinite alternate;
+}
+
+.boton-descarga a{
+    color: white;    
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes descargaAnimacion {
+    from {background-color:#006b00};    
+    to {background-color:#1d5257};    
+}
+
+.grid-item p{
+    text-align: center;
+}
+
+/* PAGINA DE VIDEOS - responsive con media queries*/
+
+.container{ 
+    margin:auto;       
+    width: 92%;    
+    display: grid;
+    grid-template-areas: "uno dos cuatro tres"                         
+                         "seis cinco siete ocho";
+    grid-template-columns: repeat(4,25%);    
+}
+
+.grid-item-videos{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item-videos iframe{
+    width: 100%;    
+    border-radius: 10%;
+}
+
+.item1, .item4, .item5, .item8{
+    display: flex;
+    justify-content:space-around;    
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item1{    
+    grid-area: uno;
+}
+
+.item2{    
+    grid-area: dos;
+}
+
+.item3{    
+    grid-area: tres;
+}
+
+.item4{    
+    grid-area: cuatro;
+}
+
+.item5{    
+    grid-area: cinco;
+}
+
+.item6{    
+    grid-area: seis;
+}
+
+.item7{    
+    grid-area: siete;
+}
+
+.item8{    
+    grid-area: ocho;
+}
+
+/* media queries */
+
+@media screen and (max-width:1024px){
+    h1, h2, h3{
+        font-size: 90%;
+    } 
+    .container{
+        grid-template-areas: "uno dos"
+                         "tres cuatro"
+                         "cinco seis"
+                         "siete ocho"; 
+        grid-template-columns: 50%;
+    }
+    .header-grid{        
+        grid-template-rows: repeat(3,auto);        
+    }
+    .nav{
+        padding:1%;
+        display: flex;        
+        align-items:center;        
+    }    
+    .nav li{
+        font-size:90%;        
+    }
+}
+
+@media screen and (max-width:425px){    
+    h1, h2, h3{
+        font-size: 80%;
+    }          
+    .container{
+        grid-template-areas: "uno"
+                             "dos"
+                             "cuatro"
+                             "tres"
+                             "cinco"
+                             "seis"
+                             "ocho"
+                             "siete";
+        grid-template-columns: 100%;
+    }
+    .header-grid{                
+        grid-template-rows: repeat(3,auto);        
+    }
+    .img-header, .nav li i{
+        display: none;
+    }
+    .nav li{
+        font-size:12px;        
+    }
+    
+    .nav{
+        padding:1%;
+        display: flex;        
+        align-items:center;
+        border-top: 0.4rem dotted #1d5257;
+    }        
+    .nav li ul li{
+        display: none;
+    }
+}
+
+/* PAGINA DE CONTACTO - contiene form de contacto y el iframe de mapa */
+.grid-contacto{
+    display: grid;    
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 2rem;
+}
+.grid-contacto-item{
+    display: flex; 
+    flex-flow: column wrap-reverse;
+    align-items: flex-end;
+}
+.grid-contacto-item2{
+    display: flex;     
+    align-items: center;    
+    color: #ffffff;
+    background-color: #1d5257;
+    border-radius: 10%;
+}
+.formulario{
+    display: grid;
+}

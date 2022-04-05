@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+    <title>Vegan House - Recetas veganas</title>    
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />    
+    <style type="text/css"> BODY{ font-family: 'Raleway', sans-serif; } </style>
+</head>
+<body>
+    <header class="header-grid">
+        <div class="header-grid-item"><h1>Vegan House - Tu lugar de recetas veganas</h1></div>
+            <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+        <div class="header-grid-item">
+            <ul class="nav">
+                <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>                    
+                <li><a href="recetas.html"><i class="fas fa-utensils"></i>Recetas veganas</a>
+                    <ul>
+                        <li><a href="recetas.html#desayunosymeriendas">Desayunos y meriendas</a></li>
+                        <li><a href="recetas.html#almuerzosycenas">Almuerzos y cenas</a></li>
+                        <li><a href="recetas.html#snacksypicoteo">Snacks y picoteo</a></li>
+                    </ul>
+                </li>
+                <li><a href="descargas.html"><i class="fas fa-arrow-circle-down"></i>Descargas</a></li>
+                <li><a href="videos.html"><i class="far fa-play-circle"></i>Videos</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a></li>
+            </ul>
+        </div>            
+        <div class="header-grid-item">
+            <img src="img/header-frutasyvegetales-opacidad.jpg" class="img-header">
+        </div>
+    </header>
+    <main>
+        <section class="grid-home">
+            <div class="grid-item-home">
+            <h2><i class="fas fa-seedling"></i>¿Qué es el veganismo?</h2>
+            <p>Según la Vegan Society, podemos saber que:</p>
+            <p id="definicion">"El veganismo es una filosofía y una forma de vida que busca excluir, en la medida de
+                lo posible y practicable, todas las formas de explotación y crueldad hacia los animales tanto en la
+                alimentación como la vestimenta o cualquier otro propósito..."</p>
+            <p>Es importante saber que el veganismo no es simplemente una dieta, sino que 
+                abarca mucho más que eso. De todos modos, en este sitio hablaremos sobre la 
+                alimentación vegana o basada en plantas.</p>
+            <p>Hay muchas razones por las que se elige una alimentación vegana:
+                <ul>
+                    <li>Por los animales</li>
+                    <li>Por la salud</li>
+                    <li>Por el medioambiente</li>
+                </ul>
+                <p>Con respecto a este último caso, debes saber que cada vez que decides comer vegano y 
+                    sacar a los animales de tu plato, estás reduciendo increíblemente tu huella de carbono.
+                    Si te interesa aprender más al respecto, podés ingresar en <a href=https://thevegancalculator.com/ target="_blank">Vegan Calculator</a> 
+                    y descubrir el impacto de tu alimentación en el planeta.                    
+            </div>        
+            <div class="grid-item-home" id="tips-veganos">
+            <h2><i class="fab fa-gratipay"></i>Tips de alimentación</h2>
+                <p>Es importante saber que no todo lo vegano es saludable. Es fundamental planificar la dieta 
+                    para que no falten los nutrientes esenciales que nuestro cuerpo necesita.            
+                </p>
+                <ul>
+                    <li>Que la base de tu dieta sean alimentos reales, de temporada y no ultraprocesados.</li>
+                    <li>Elegir cereales integrales en lugar de refinados (contienen más nutrientes)</li>
+                    <li>Consumir legumbres de manera diaria: aportan grandes cantidades de proteína, hierro y fibras.</li>
+                    <li>Consumir diariamente grasas saludables (palta, frutos secos, semillas)</li>
+                    <li>Realizar ejercicio diariamente y exponernos al sol para absorber vitamina D.</li>
+                    <li>Suplementar la vitamina B12: es la única que no encontramos en fuentes vegetales, 
+                        por lo que resulta indispensable su suplementación.</li>
+                </ul>
+            </div>
+            <div class="grid-item-form">
+            <form action="https://formspree.io/f/xpzkwzej" method="POST" target="_blank">
+            <h2><i class="fas fa-envelope"></i>Contanos sobre vos</h2>
+                <fieldset>
+                    <legend>Ayudanos respondiendo esta breve encuesta:</legend>
+                        <label>Nombre:
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+                        </label>
+                        <label>Edad:
+                            <input type="number" name="edad" placeholder="¿Cuántos años tenés?" required>
+                        </label>
+                        <label>E-mail:
+                            <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+                        </label>                    
+                        <legend>¿Sos o tenés pensado hacerte veganx?</legend>
+                        <label>Si 
+                            <input type="radio" name="veganx" value="si">
+                        </label>
+                        <label>No                       
+                            <input type="radio" name="veganx" value="no">
+                        </label>
+                        <legend>¿Qué te motiva a empezar a comer a base de plantas?</legend>
+                        <label>
+                            <textarea name="comentarios" cols="75" rows="5" placeholder="Dejanos tu comentario"></textarea>
+                        </label>                        
+                        <legend>                            
+                            <input type="submit" name="submit">
+                            <input type="reset" name="reset">
+                        </legend>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer class="grid-footer">
+        <div class="grid-footer-item">Seguinos en redes:</div>
+        <div class="grid-footer-item"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a></div>
+        <div class="grid-footer-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a></div>
+        <div class="grid-footer-item"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i>Twitter</a></div>
+    </footer>
+
+</body>
+</html>
